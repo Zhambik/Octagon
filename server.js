@@ -1,5 +1,6 @@
 const express = require('express');
 const mysql = require('mysql2');
+require('dotenv').config();
 const app = express();
 const PORT = 3000;
 
@@ -185,4 +186,6 @@ app.listen(PORT, () => {
     console.log('  POST /addItem?name=NAME&desc=DESC - Добавить элемент');
     console.log('  POST /deleteItem?id=ID - Удалить элемент');
     console.log('  POST /updateItem?id=ID&name=NAME&desc=DESC - Обновить элемент');
+    // Запускаем бота после старта сервера
+    require('./bot.js');
 });
