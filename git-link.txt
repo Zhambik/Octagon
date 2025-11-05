@@ -1,1 +1,1 @@
-https://github.com/Zhambik/Octagon/tree/main_mysql
+https://github.com/Zhambik/Octagon/tree/telegram-bot
